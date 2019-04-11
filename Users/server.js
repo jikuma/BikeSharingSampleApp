@@ -169,7 +169,8 @@ app.get('/api/allUsers', function (req, res) {
             console.log("No records found.");
             res.status(200).send([]);
         } else {
-            res.status(200).send(result);
+            res.status(500).send(err);
+            return;
         }
     });
 });

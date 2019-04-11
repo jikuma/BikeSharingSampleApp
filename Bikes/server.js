@@ -148,7 +148,7 @@ app.get('/api/allbikes', function(req, res) {
 });
 
 // new bike ------------------------------------------------------------
-app.post('/api/bikes', function (req, res) {
+app.post('/api/bikes1', function (req, res) {
     var requestID = req.header(requestIDHeaderName);
     var validationErrors = validate(req.body, incomingBikeSchema);
     if (validationErrors) {

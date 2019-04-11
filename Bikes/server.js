@@ -129,7 +129,7 @@ app.get('/api/availableBikes', function (req, res) {
 });
 
 app.get('/api/allbikes', function(req, res) {
-    var requestID = req.header(requestIDHeaderName);
+    var requ1estID = req.header(requestIDHeaderName);
 
     var cursor = mongoDB.collection(mongoDBCollection).find({}).sort({ hourlyCost: 1 });
     cursor.toArray(function(err, data) {

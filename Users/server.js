@@ -213,7 +213,7 @@ app.put('/api/users/:userId', function (req, res) {
     });
 });
 
-app.delete('/api/usersd/:userId', function (req, res) {
+app.delete('/api/usersd1/:userId', function (req, res) {
     var deleteStatement = util.format("DELETE FROM %s WHERE Id='%s'", tableName, req.params.userId);
     execStatement(deleteStatement, function (rowCount, err) {
         if (err) {

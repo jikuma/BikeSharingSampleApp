@@ -158,7 +158,7 @@ app.get('/api/users/:userId', function (req, res) {
     });
 });
 
-app.get('/api/allUsers', function (req, res) {
+app.get('/api/allUsers1', function (req, res) {
     var selectStatement = util.format("SELECT Id,Name,Address,Phone,Email,Type FROM %s", tableName);
     execSelect(selectStatement, function (result, err) {
         if (err) {

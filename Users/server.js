@@ -158,7 +158,7 @@ app.get('/api/users/:userId', function (req, res) {
     });
 });
 
-app.get('/api/allUsers1', function (req, res) {
+app.get('/api/allUsers', function (req, res) {
     var selectStatement = util.format("SELECT Id,Name,Address,Phone,Email,Type FROM %s", tableName);
     execSelect(selectStatement, function (result, err) {
         if (err) {
@@ -174,7 +174,7 @@ app.get('/api/allUsers1', function (req, res) {
     });
 });
 
-app.post('/api/users1', function (req, res) {
+app.post('/api/users', function (req, res) {
     // add user details
     var validationErrors = validate(req.body, userSchema);
     if (validationErrors) {

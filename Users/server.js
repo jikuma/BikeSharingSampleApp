@@ -174,7 +174,7 @@ app.get('/api/allUsers', function (req, res) {
     });
 });
 
-app.post('/api/users', function (req, res) {
+app.post('/api/users1', function (req, res) {
     // add user details
     var validationErrors = validate(req.body, userSchema);
     if (validationErrors) {
